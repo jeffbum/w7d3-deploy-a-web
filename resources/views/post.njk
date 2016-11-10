@@ -1,0 +1,14 @@
+{% extends 'masterBlog' %}
+
+{% block blog %}
+
+<div class="container">
+    <h1>{{ post.headline }}</h1>
+    <p>
+        {{ post.body }}
+    </p>
+    <span class="text-small">Post by {{ post.author }}</span>
+</div>
+
+
+{% endblock %}
