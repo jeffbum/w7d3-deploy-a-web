@@ -20,15 +20,15 @@ class BlogController {
 
   * store(request, response) {
     //
-var post = new Post()
-post.author = request.input('author')
-post.headline = request.input('headline')
-post.body = request.input('body')
+        var post = new Post()
+        post.author = request.input('author')
+        post.headline = request.input('headline')
+        post.body = request.input('body')
 
-yield post.save()
+        yield post.save()
 
-response.redirect('/blog')
-}
+        response.redirect('/blog')
+    }
 
   * show(request, response) {
     //

@@ -1,13 +1,13 @@
 {% extends 'masterBlog' %}
 
-{%% block blog %}
+{% block blog %}
 
 <body class="container">
 
     <ul class="list-group">
         {% for post in posts %}
         <li class="list-group-item">
-            <a href="/blog{{post.id}}">{{ post.headline }}</a>
+            <a href="/blog/{{post.id}}">{{ post.headline }}</a>
         </li>
         {% endfor %}
     </ul>
